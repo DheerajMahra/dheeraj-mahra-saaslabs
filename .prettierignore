@@ -1,0 +1,31 @@
+# Ignore node_modules
+node_modules
+
+# Ignore specific files
+*.min.js
+*.bundle.js
+
+# Ignore logs
+*.log
+
+# Ignore test related files
+jest.config.js
+jest.setup.js
+
+# Ignore configuration files
+.eslintrc.js
+
+# Ignore assets
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Ignore any other build output
+build
+dist
+
+# Ignore temporary files
+tmp
+temp
