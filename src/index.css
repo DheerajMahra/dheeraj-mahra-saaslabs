@@ -23,6 +23,12 @@ body {
   justify-content: center;
 }
 
+.project-details {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
 /** Table */
 
 .table-container {

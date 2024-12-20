@@ -5,6 +5,15 @@ import { App } from "./App";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <>
+      <App />
+      <a
+        className="project-details"
+        href="https://github.com/DheerajMahra/dheeraj-mahra-saaslabs"
+        target="_blank"
+      >
+        <code>Dheeraj Mahra | Source code</code>
+      </a>
+    </>
   </StrictMode>
 );
