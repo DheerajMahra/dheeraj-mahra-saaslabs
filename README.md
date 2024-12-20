@@ -1,5 +1,9 @@
 # Frontend Assignment
 
+## Solution Link
+
+Solution hosted on vercel: [Link](https://dheeraj-mahra-saaslabs.vercel.app)
+
 ## Assignment
 
 You are required to fetch the details of the highly-rated kickstarter projects by implementing an AJAX call to their APIs.
