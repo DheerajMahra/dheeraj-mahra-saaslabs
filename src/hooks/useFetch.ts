@@ -9,6 +9,9 @@ export const useFetch = <T>(url: string) => {
     async function fetchData() {
       try {
         const response = await fetch(url);
+
+        if (!response.ok) throw new Error(response.statusText);
+
         const result = await response.json();
         setData(result);
         setIsLoading(false);

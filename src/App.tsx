@@ -10,9 +10,14 @@ export const App = () => {
   const [page, setPage] = useState(PAGINATION.PAGE);
   const [size, setSize] = useState(PAGINATION.SIZE);
 
-  if (isLoading) return <div>Loading...</div>;
-  if (error) return <div>Unable to fetch data.</div>;
-  if (!data.length) return <div>No data found.</div>;
+  if (isLoading)
+    return (
+      <div role="status" aria-busy="true">
+        Loading...
+      </div>
+    );
+  if (error) return <div role="status">Unable to fetch data.</div>;
+  if (!data.length) return <div role="status">No data found.</div>;
 
   const handlePageChange = (newPage: number) => {
     setPage(newPage);
