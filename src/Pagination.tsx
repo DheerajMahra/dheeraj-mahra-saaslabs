@@ -36,15 +36,19 @@ export const Pagination = ({
   return (
     <div className="pagination">
       <div className="pagination__chips">
-        <button disabled={page === 1} onClick={handlePreviousPage}>
+        <button disabled={page === 1} onClick={handlePreviousPage} aria-label="Go to previous page">
           Previous
         </button>
-        <button disabled={page === totalPages} onClick={handleNextPage}>
+        <button
+          disabled={page === totalPages}
+          onClick={handleNextPage}
+          aria-label="Go to next page"
+        >
           Next
         </button>
       </div>
       <div className="pagination__sizer">
-        <select value={size} onChange={handlePageSizeChange}>
+        <select value={size} onChange={handlePageSizeChange} aria-label="Select page size">
           {PAGINATION.SIZER.map(size => (
             <option key={size} value={size}>
               {size}
